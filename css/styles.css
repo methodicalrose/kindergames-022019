@@ -65,3 +65,9 @@ body {
   position: absolute;
   margin: 0;
 }
+
+.game-card-footer:hover {
+  text-decoration: underline;
+  color: white;
+  font-size: 35px;
+}
