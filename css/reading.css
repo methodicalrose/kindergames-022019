@@ -1,0 +1,21 @@
+header {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+    background-color: #7EE8FA;
+  }
+  
+  body {
+    background-color: #FFEE75;
+    padding: 0;
+    margin: 0;
+  }
+
+  .title-pm {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
