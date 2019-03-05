@@ -1,21 +1,51 @@
 header {
-    height: 50px;
-    width: 100%;
-    position: fixed;
-    z-index: 10000;
-    background-color: #7EE8FA;
-  }
-  
-  body {
-    background-color: #FFEE75;
-    padding: 0;
-    margin: 0;
-  }
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+  background-color: green;
+}
 
-  .title-pm {
-    font-size: 30px;
-    color: white;
-    text-align: center;
-    margin-top: 5px;
-    margin-left: 10px;
-  }
+body {
+  background-color: lightgreen;
+  /* padding: 0;
+  margin: 0; */
+}
+
+#Welcome {
+  font-size: 30px;
+  color: white;
+  align: left;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.game-card {
+  background-color: white;
+  height: 300px;
+  margin-top: 10%;
+  border-radius: 10%;
+  border: 10px solid green;
+}
+
+.text-card {
+  background-color: white;
+  height: 100px;
+  margin-top: 10%;
+  border-radius: 10%;
+  border: 6px solid green;
+  text-align: center;
+}
+.game-card-footer {
+  height: 35px;
+  width: 100%;
+  background-color: green;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: 0;
+}

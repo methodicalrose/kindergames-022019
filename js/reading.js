@@ -1,0 +1,4 @@
+//NOTES FOR JS
+
+// DEFINE VARIABLES
+const
