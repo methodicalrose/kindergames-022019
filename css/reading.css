@@ -20,7 +20,7 @@ body {
   margin-left: 10px;
 }
 
-.game-card {
+.readpic-card{
   background-color: white;
   height: 300px;
   margin-top: 10%;
@@ -28,7 +28,7 @@ body {
   border: 10px solid green;
 }
 
-.text-card {
+.readtext-card {
   background-color: white;
   height: 100px;
   margin-top: 10%;
@@ -36,6 +36,11 @@ body {
   border: 6px solid green;
   text-align: center;
 }
+
+.text {
+  font-weight: bold;
+}
+
 .game-card-footer {
   height: 35px;
   width: 100%;
