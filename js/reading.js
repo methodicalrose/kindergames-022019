@@ -1,5 +1,6 @@
 const flash = document.getElementById('here');
 
-here.addEventListener("click", function(){
-    document.body.style.backgroundColor = "red";
+flash.addEventListener("click", function(){
+    document.body.style.backgroundColor = "blue";
+    document..body.style.borderColor = "red";
   });
