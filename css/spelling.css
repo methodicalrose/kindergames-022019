@@ -1,5 +1,19 @@
 .game-title {
   color: white;
+  font-size: 30pt;
   text-align: center;
-  font-size: 35px;
+}
+
+#SpellPic {
+  margin-top: 10%;
+  height: 250px;
+  border: 1px solid black;
+}
+
+#SpellBox {
+  margin-top: 50px;
+  text-align: center;
+  color: black;
+  font-size: 42pt;
+  font-weight: bold;
 }
