@@ -52,6 +52,13 @@ body {
   z-index: 100;
 }
 
+.borderBlink {
+  @keyframes example {
+    from {border: 10px solid green};
+    to {border: 10px solid red};
+  }
+}
+
 .game-card-footer {
   height: 35px;
   width: 100%;
