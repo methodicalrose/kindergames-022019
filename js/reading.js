@@ -8,9 +8,14 @@ const doort = document.getElementById("doortext");
 carp.addEventListener("click", red);
 cart.addEventListener("click", red);
 
-function red (){
+function red (el){
   // this.style.borderColor = "red";
-  this.classList.toggle("borderBlink");
+  this.classList.toggle("borderblink");
+  if(el.className === "this"){
+    el.className = "borderblink";
+  } else {
+    el.className = "game-card";
+  }
 }
 
 catp.addEventListener("click", purple);

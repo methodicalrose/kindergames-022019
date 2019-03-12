@@ -52,7 +52,7 @@ body {
   z-index: 100;
 }
 
-.borderBlink {
+.borderblink {
   @keyframes example {
     from {border: 10px solid green};
     to {border: 10px solid red};
