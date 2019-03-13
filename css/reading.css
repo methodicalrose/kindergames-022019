@@ -7,12 +7,18 @@ header {
 }
 
 body {
-  background-color: lightgreen;
-  /* padding: 0;
-  margin: 0; */
+  background-image: linear-gradient(green, #FFF07C);
 }
 
 #Welcome {
+  font-size: 30px;
+  color: white;
+  align: left;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.game-title {
   font-size: 30px;
   color: white;
   align: left;
@@ -41,7 +47,15 @@ body {
   font-weight: bold;
 }
 
-.game-card-footer {
+.borderblink {
+  border: 10px solid red;
+  background-color: white;
+  height: 400px;
+  margin-top: 10%;
+  border-radius: 10%;
+}
+
+/* .game-card-footer {
   height: 35px;
   width: 100%;
   background-color: green;
@@ -53,4 +67,4 @@ body {
   right: 0;
   position: absolute;
   margin: 0;
-}
+} */

@@ -8,26 +8,21 @@ const doort = document.getElementById("doortext");
 carp.addEventListener("click", red);
 cart.addEventListener("click", red);
 
-function red (el){
-  // this.style.borderColor = "red";
-  this.classList.toggle("borderblink");
-  if(el.className === "this"){
-    el.className = "borderblink";
-  } else {
-    el.className = "game-card";
-  }
+function red (){
+  this.style.borderColor = "red";
+  // this.classList.toggle("borderblink");
 }
 
 catp.addEventListener("click", purple);
 catt.addEventListener("click", purple);
 
 function purple (){
-  this.style.borderColor = "purple";
+  this.style.borderColor = "#8A7090";
 }
 
 doorp.addEventListener("click", yellow);
 doort.addEventListener("click", yellow);
 
 function yellow (){
-  this.style.borderColor = "yellow";
+  this.style.borderColor = "#63D2FF";
 }
