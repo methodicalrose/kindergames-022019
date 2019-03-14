@@ -9,8 +9,9 @@ carp.addEventListener("click", red);
 cart.addEventListener("click", red);
 
 function red (){
-  this.style.borderColor = "red";
-  // this.classList.toggle("borderblink");
+  // this.style.borderColor = "red";
+  // heh.classList.toggle("borderblink");
+  if(this.className === "game-card")
 }
 
 catp.addEventListener("click", purple);
