@@ -11,7 +11,6 @@ cart.addEventListener("click", red);
 function red (){
   // this.style.borderColor = "red";
   // heh.classList.toggle("borderblink");
-  if(this.className === "game-card")
 }
 
 catp.addEventListener("click", purple);
@@ -20,6 +19,7 @@ catt.addEventListener("click", purple);
 function purple (){
   this.style.borderColor = "#8A7090";
 }
+
 
 doorp.addEventListener("click", yellow);
 doort.addEventListener("click", yellow);
