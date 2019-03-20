@@ -1,18 +1,7 @@
 var spellingWords = ["cat", "dog", "ant", "fish", "mom", "dad", "bed", "bat", "can", "pot", "red", "blue", "pink", "ball", "run", "cry", "hug", "jump", "yell", "cup"];
 var pickedWord = spellingWords[Math.floor(Math.random() * spellingWords.length)];
-var blankSpaces = [];
-var keyValue;
 
-// Generates blank spaces based on word length
-for (var i = 0; i < pickedWord.length; i++) {
- blankSpaces[i] = "_";
- document.getElementById("SpellBox").innerHTML = `${blankSpaces.join(" ")}`;
- // Replaces the blank spaces with entered letters --- WIP
- document.addEventListener('keydown', function(event) {
-   keyValue = event.key;
-   blankSpaces.splice(i, 1, keyValue);
- });
-};
+
 
 // Displays the image that goes with the chosen word
 switch (pickedWord) {
