@@ -9,7 +9,7 @@ carp.addEventListener("click", red);
 cart.addEventListener("click", red);
 
 function red (){
-  // this.style.borderColor = "red";
+  this.style.borderColor = "red";
   // heh.classList.toggle("borderblink");
 }
 

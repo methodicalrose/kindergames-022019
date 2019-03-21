@@ -1,20 +1,20 @@
 const readbox = document.getElementsByClassName('readpic-card');
 const textbox = document.getElementsByClassName('readtext-card');
 
-for(i = 0; i < readbox.length; i++) {
-    readbox[i].addEventListener('click', boxFunction);
-}
+// for(i = 0; i < readbox.length; i++) {
+//     readbox[i].addEventListener('click', boxFunction);
+// }
 
-for(i = 0; i < textbox.length; i++) {
-    textbox[i].addEventListener('click', boxFunction);
-}
+// for(i = 0; i < textbox.length; i++) {
+//     textbox[i].addEventListener('click', boxFunction);
+// }
 
-function boxFunction(e){{
-    if (e.target.readbox || e.target.textbox){
-        e.classList.toggle('pairone');
-    }
-}
-}
+// function boxFunction(e){{
+//     if (e.target.readbox || e.target.textbox){
+//         e.classList.toggle('pairone');
+//     }
+// }
+// }
 
 
 // var boxes = document.getElementsByClassName("boxes");
@@ -40,8 +40,8 @@ function boxFunction(e){{
 // }
 
 
-// document.getElementsByClassName('.readpic-card').addEventListener('click', function(e) {
-//     [].map.call(document.querySelectorAll('.readpic-card'), function(el) {
-//       el.classList.toggle('pairone');
-//     });
-//   });
+document.getElementsByClassName('.readpic-card').addEventListener('click', function(e) {
+    [].map.call(document.querySelectorAll('.readpic-card'), function(el) {
+      el.classList.toggle('pairone');
+    });
+  })
