@@ -5,12 +5,16 @@ const catt = document.getElementById("cattext");
 const doorp = document.getElementById("doorpic");
 const doort = document.getElementById("doortext");
 
-carp.addEventListener("click", red);
-cart.addEventListener("click", red);
+carp.addEventListener("click", pairone);
+cart.addEventListener("click", pairone);
 
-function red (){
-  this.style.borderColor = "red";
-  // heh.classList.toggle("borderblink");
+function parione (el){
+  this.classList.toggle("pairone");
+  if(el.className === "this"){
+    el.className = "pairone";
+  } else {
+    el.className = "this";
+  }
 }
 
 catp.addEventListener("click", purple);
@@ -19,7 +23,6 @@ catt.addEventListener("click", purple);
 function purple (){
   this.style.borderColor = "#8A7090";
 }
-
 
 doorp.addEventListener("click", yellow);
 doort.addEventListener("click", yellow);
