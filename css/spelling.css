@@ -9,7 +9,7 @@
 }
 
 #SpellPic {
-  margin-top: 10%;
+  margin-top: 40px;
   height: 250px;
   border: 1px solid black;
   padding: 0;
@@ -23,7 +23,15 @@
   font-weight: bold;
 }
 
-#SubmitButton {
+#SpaceDiv {
+  font-weight: bold;
+  font-size: 42pt;
   text-align: center;
-  margin-top: 15px;
+}
+
+#Score {
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 20pt;
+  text-align: center;
 }
