@@ -1,10 +1,17 @@
+// SETTING VARIABLES
+
 const carp = document.getElementById("carpic");
 const cart = document.getElementById("cartext");
 const catp = document.getElementById("catpic");
 const catt = document.getElementById("cattext");
 const doorp = document.getElementById("doorpic");
 const doort = document.getElementById("doortext");
-const btn = document.getElementById("button");
+const btn = document.getElementById("buttonreading");
+const modalread = document.getElementById("modalreading");
+const closer = document.getElementsByClassName("close");
+const newlvl = document.getElementById("newlevel");
+
+// PAIR ONE
 
 carp.addEventListener("click", pairone);
 cart.addEventListener("click", pairone);
@@ -18,6 +25,8 @@ function pairone (el){
   }
 }
 
+// PAIR TWO 
+
 catp.addEventListener("click", pairtwo);
 catt.addEventListener("click", pairtwo);
 
@@ -29,6 +38,8 @@ function pairtwo (el){
     el.className = "this";
   }
 }
+
+// PAIR THREE
 
 doorp.addEventListener("click", pairthree);
 doort.addEventListener("click", pairthree);
@@ -42,3 +53,24 @@ function pairthree (el){
   }
 }
 
+// MODAL FOR NEW LEVEL
+
+btn.onclick = function() {
+  modalread.style.display = "block";
+}
+
+closer.onclick = function() {
+  modalread.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modalread) {
+    modalread.style.display = "none";
+  }
+}
+
+// NEW LEVEL BUTTON ON MODAL
+
+newlvl.onclick = function () {
+  reading2.html
+}
