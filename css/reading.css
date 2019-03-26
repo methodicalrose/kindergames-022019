@@ -156,16 +156,16 @@ body {
 
 /* NEXT LEVEL BUTTON */
 
-#newlevel {
+#newlevel, #home {
   margin-top: 2%;
   font-size: 24px;
   border-radius: 15px;
   box-shadow: 0 9px #fff;
 }
 
-#newlevel:hover {background-color: #3e8e41}
+#newlevel, #home:hover {background-color: #3e8e41}
 
-#newlevel:active {
+#newlevel, #home:active {
   background-color: #3e8e41;
   transform: translateY(4px);
 }

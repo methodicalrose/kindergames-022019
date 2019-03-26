@@ -68,9 +68,3 @@ window.onclick = function(event) {
     modalread.style.display = "none";
   }
 }
-
-// NEW LEVEL BUTTON ON MODAL
-
-newlvl.onclick = function () {
-  reading2.html
-}
