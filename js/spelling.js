@@ -2,9 +2,11 @@ var spellingWords = ["cat", "dog", "ant", "fish", "mom", "dad", "bed", "bat", "c
 var pickedWord = spellingWords[Math.floor(Math.random() * spellingWords.length)];
 var spellGuess = document.getElementById("SpellGuess").value;
 var pointCounter = 0;
+var qNumber = 0;
 var blankSpaces = [];
 const url = `url(images/${pickedWord}.jpg)`;
 
+// Generate word image and blank spaces
 for (var i = 0; i < pickedWord.length; i++) {
  blankSpaces[i] = "_";
  document.getElementById("SpaceDiv").innerText = blankSpaces.join(" ");
@@ -12,7 +14,18 @@ for (var i = 0; i < pickedWord.length; i++) {
 };
 
 // Connect to Submit button
-if (spellGuess === pickedWord) {
-  pointCounter ++;
-  document.getElementById("Score").innerText = `${pointCounter}/10`;
+function submitGuess() {
+  submitGuess.preventDefault();
+  if (spellGuess.value === pickedWord.value) {
+    pointCounter ++;
+    document.getElementById("Score").innerText = `${pointCounter}/10`;
+    console.log(pointCounter);
+  };
+  qNumber ++
+  if (qNumber < 10) {
+    pickedWord = spellingWords[Math.floor(Math.random() * spellingWords.length)];
+  } else {
+    //display final score, button back to home page
+  };
+  console.log(qNumber)
 };
