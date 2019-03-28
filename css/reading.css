@@ -126,7 +126,6 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #63D2FF;
   background-color: rgba(0,0,0,0.4);
 }
 
@@ -154,18 +153,24 @@ body {
   text-decoration: none;
 }
 
-/* NEXT LEVEL BUTTON */
+/* NEXT LEVEL AND HOME BUTTON IN MODAL */
 
-#newlevel, #home {
+.next-button {
   margin-top: 2%;
   font-size: 24px;
   border-radius: 15px;
-  box-shadow: 0 9px #fff;
+  box-shadow: 0 9px #666;
+  margin-right: 3%;
 }
 
-#newlevel, #home:hover {background-color: #3e8e41}
+.modalreading-text {
+  text-decoration: none;
+  color: #000;
+}
 
-#newlevel, #home:active {
+.next-button:hover {background-color: #3e8e41}
+
+.next-button:active {
   background-color: #3e8e41;
   transform: translateY(4px);
 }

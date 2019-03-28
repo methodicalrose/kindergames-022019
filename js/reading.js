@@ -9,7 +9,6 @@ const doort = document.getElementById("doortext");
 const btn = document.getElementById("buttonreading");
 const modalread = document.getElementById("modalreading");
 const closer = document.getElementsByClassName("close");
-const newlvl = document.getElementById("newlevel");
 
 // PAIR ONE
 
