@@ -1,54 +1,73 @@
+body{
+    margin:0px;
+}
+form {
+    margin-top:30vh;
+    
+}
 .container {
 height: 100vh;
+margin:0px;
 display: flex;
 justify-content: center;
 align-content: center;
 }
-
+#quiz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0px;
+}
 img {
     padding: 10px 10px;
     width: 45vw;
 }
 .row {
-    flex-direction: column;
+    display: flex;
     justify-content: center;
-    align-content: center;
     align-items: center;
-    
-    margin-bottom: 10px;
+    margin:0px;
 }
-.game-container {
-background-color: #64B22E;
-color: white;
-text-align: center;
-height: 100vh;
-padding: 0px;
+.titleQuestion{
+    color: #ffffff;
+    margin-top: 20px;
 }
+
 .question{
-    background-color: #1938FF;
+    background-color:#00D900;
     color: white;
     padding: 20px;
     margin: 0px;
     text-align: center;
-    
 }
-.title {
-    font-size: 20px;
-    font-weight: bold;
-    padding: 20px;
-}
-.option {
-padding-top: 15px;
-padding-bottom: 15px;
-}
-.next-button{
-    background-color: #1938FF;
-    width:100%;
-    height: 10%;
-}
-.fas {
+.option-container{
+    text-align: center;
     height: 100%;
+    margin-top: 10px;
 }
-.card-body {
-display: none;
+.options {
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    background-color:#00D900;
+    justify-content: center;
+    align-items: center;
+}
+.optionBtn{
+    width:70%;
+    height:50px;
+    margin-top: 20px;
+    color:#00D900;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 1px 5px #1B591B;
+    border: none;
+}
+.optionBtn:focus{
+    outline: none;
+}
+.optionBtn:hover{
+    color:#1B591B;
+    background-color:#00D900;
+    border: none;
 }
