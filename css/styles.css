@@ -1,85 +1,67 @@
-
-body{
-  margin:0px;
-}
-form {
-  margin-top:30vh;
-  
-}
-.container {
-height: 100vh;
-margin:0px;
-display: flex;
-justify-content: center;
-align-content: center;
-}
-#quiz{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding:0px;
-}
-img {
-  padding: 10px 10px;
-  max-height: 50vh!important;
-}
-.row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin:0px;
-}
-.titleQuestion{
-  color: #ffffff;
-  margin-top: 20px;
+header {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+  background-color: green;
 }
 
-.question{
-  background-color:#00D900;
+body {
+  background-color: lightgreen;
+  padding: 0;
+  margin: 0;
+}
+
+#Welcome {
+  font-size: 30px;
   color: white;
-  padding: 20px;
-  margin: 0px;
-  text-align: center;
-}
-.option-container{
-  text-align: center;
-  height: 100%;
-  margin-top: 10px;
-}
-.options {
-  height:100vh;
-  display: flex;
-  flex-direction: column;
-  background-color:#00D900;
-  justify-content: center;
-  align-items: center;
-}
-.optionBtn{
-  width:70%;
-  height:50px;
-  margin-top: 20px;
-  color:#00D900;
-  background-color: #ffffff;
-  border-radius: 30px;
-  box-shadow: 1px 5px #1B591B;
-  border: none;
-}
-.optionBtn:focus{
-  outline: none;
-}
-.optionBtn:hover{
-  color:#1B591B;
-  background-color:#00D900;
-  border: none;
+  align: left;
+  margin-top: 5px;
+  margin-left: 10px;
 }
 
-.icon {
-  margin-bottom:20px;
-  padding:10px;
-  color:#ffffff;
-  font-size: 2.5em;
+.game-card {
+  background-color: white;
+  height: 400px;
+  margin-top: 10%;
+  border-radius: 10%;
+  border: 10px solid green;
 }
 
-.question-number{
-  color:#ffffff;
+#Card_1 {
+  background-image: url("https://unsplash.com/photos/J9TV0hiN1y0");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+
+#Card_2 {
+  background-image: url("https://unsplash.com/photos/p_KJvKVsH14");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+
+#Card_3 {
+  background-image: url("https://unsplash.com/photos/cHhbULJbPwM");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+
+.game-card-footer {
+  height: 35px;
+  width: 100%;
+  background-color: green;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: 0;
 }
