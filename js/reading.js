@@ -93,4 +93,4 @@ document.addEventListener('click', function (event) {
 
 } else {
   modal.style.display = "none";
-};
+});
