@@ -1,9 +1,10 @@
+
 body{
-    margin:0px;
+  margin:0px;
 }
 form {
-    margin-top:30vh;
-    
+  margin-top:30vh;
+  
 }
 .container {
 height: 100vh;
@@ -13,72 +14,72 @@ justify-content: center;
 align-content: center;
 }
 #quiz{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:0px;
 }
 img {
-    padding: 10px 10px;
-    max-height: 50vh!important;
+  padding: 10px 10px;
+  max-height: 50vh!important;
 }
 .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0px;
 }
 .titleQuestion{
-    color: #ffffff;
-    margin-top: 20px;
+  color: #ffffff;
+  margin-top: 20px;
 }
 
 .question{
-    background-color:#00D900;
-    color: white;
-    padding: 20px;
-    margin: 0px;
-    text-align: center;
+  background-color:#00D900;
+  color: white;
+  padding: 20px;
+  margin: 0px;
+  text-align: center;
 }
 .option-container{
-    text-align: center;
-    height: 100%;
-    margin-top: 10px;
+  text-align: center;
+  height: 100%;
+  margin-top: 10px;
 }
 .options {
-    height:100vh;
-    display: flex;
-    flex-direction: column;
-    background-color:#00D900;
-    justify-content: center;
-    align-items: center;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  background-color:#00D900;
+  justify-content: center;
+  align-items: center;
 }
 .optionBtn{
-    width:70%;
-    height:50px;
-    margin-top: 20px;
-    color:#00D900;
-    background-color: #ffffff;
-    border-radius: 30px;
-    box-shadow: 1px 5px #1B591B;
-    border: none;
+  width:70%;
+  height:50px;
+  margin-top: 20px;
+  color:#00D900;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 1px 5px #1B591B;
+  border: none;
 }
 .optionBtn:focus{
-    outline: none;
+  outline: none;
 }
 .optionBtn:hover{
-    color:#1B591B;
-    background-color:#00D900;
-    border: none;
+  color:#1B591B;
+  background-color:#00D900;
+  border: none;
 }
 
 .icon {
-    margin-bottom:20px;
-    padding:10px;
-    color:#ffffff;
-    font-size: 2.5em;
+  margin-bottom:20px;
+  padding:10px;
+  color:#ffffff;
+  font-size: 2.5em;
 }
 
 .question-number{
-    color:#fffff;
+  color:#ffffff;
 }
