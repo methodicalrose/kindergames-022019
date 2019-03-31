@@ -24,9 +24,8 @@ body {
 .game-title {
   font-size: 30px;
   color: white;
-  align: left;
   margin-top: 5px;
-  margin-left: 10px;
+  margin-left: 45%;
 }
 
 /* MAIN DIVS FOR PICTURES AND TEXT */
@@ -35,14 +34,16 @@ body {
   background-color: white;
   height: 300px;
   margin-top: 10%;
+  margin-left: 5%;
   border-radius: 10%;
   border: 10px solid green;
 }
 
 .readtext-card {
   background-color: white;
-  height: 100px;
+  height: 80px;
   margin-top: 10%;
+  margin-left: 5%;
   border-radius: 10%;
   border: 6px solid green;
   text-align: center;
@@ -54,9 +55,24 @@ body {
 
 /* PICTURES */
 
-.carpic, .catpic, .doorpic {
-  height: 100%;
+.carpic {
+  height: 56%;
   width: 100%;
+  margin-top: 30%;
+}
+
+.catpic {
+  margin-left: 20%;
+  margin-top: 5%;
+  height: 89%;
+  width: 50%;
+}
+
+.doorpic {
+  height: 96%;
+  width: 60%;
+  margin-top: 4%;
+  margin-left: 20%;
 }
 
 /* NEW CLASSES WHEN DIVS ARE CLICKED */

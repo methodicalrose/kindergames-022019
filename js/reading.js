@@ -54,43 +54,45 @@ function pairthree (el){
 
 // MODAL FOR NEW LEVEL
 
-// btn.onclick = function() {
-//   modalread.style.display = "block";
-// }
+btn.onclick = function() {
+  modalread.style.display = "block";
+}
 
-// closer.onclick = function() {
-//   modalread.style.display = "none";
-// }
-
-// window.onclick = function(event) {
-//   if (event.target == modalread) {
-//     modalread.style.display = "none";
-//   }
-// }
-
-document.addEventListener('click', function (event) {
-
-	// If the clicked element doesn't have the right selector, bail
-	if (!event.target.matches('.click-me')) return;
-
-	// Don't follow the link
-	btn.onlick = function () {
-    modalread.replaceChild.style.display = "block";
+closer.onclick = function() {
+  if (event.target == modalread) {
+  modalread.style.display = "none";
   }
+}
 
-  closer.onclick = function() {
+window.onclick = function(event) {
+  if (event.target == modalread) {
     modalread.style.display = "none";
   }
+}
+
+// document.addEventListener('click', function (event) {
+
+// 	// If the clicked element doesn't have the right selector, bail
+// 	if (!event.target.matches('.click-me')) return;
+
+// 	// Don't follow the link
+// 	btn.onlick = function () {
+//     modalread.replaceChild.style.display = "block";
+//   }
+
+//   closer.onclick = function() {
+//     modalread.style.display = "none";
+//   }
   
-  window.onclick = function(event) {
-    if (event.target == modalread) {
-      modalread.style.display = "none";
-    }
-  }
+//   window.onclick = function(event) {
+//     if (event.target == modalread) {
+//       modalread.style.display = "none";
+//     }
+//   }
 
-	// Log the clicked element in the console
-	console.log(event.target);
+// 	// Log the clicked element in the console
+// 	console.log(event.target);
 
-} else {
-  modal.style.display = "none";
-});
+// } else {
+//   modal.style.display = "none";
+// });

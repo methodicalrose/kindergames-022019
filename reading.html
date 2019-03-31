@@ -21,11 +21,11 @@
             </div>
             <!-- GAME 1 - CAT -->
             <div id="catpic" class="readpic-card col-md-4 col-md-offset-1 click-me">
-              <img class="catpic img-responsive" src="img/cat.jpg" alt="Picture of a cat">
+              <img class="catpic img-responsive" src="img/cat.png" alt="Picture of a cat">
             </div>
             <!-- GAME 1 - DOOR -->
             <div id="doorpic" class="readpic-card col-md-3 col-md-offset-1 click-me">
-              <img class="doorpic img-responsive" src="img/door.jpg" alt="Picture of a door">
+              <img class="doorpic img-responsive" src="img/door.png" alt="Picture of a door">
             </div>
           </div>
           <div class="row">
@@ -42,14 +42,22 @@
               <h1 class="text">C A T</h1>
             </div>
           </div>
+
           <div>
-
             <!-- BUTTON -->
-
           <button id="buttonreading" type="button">Done!</button>
-
-          <!-- MODAL -->
-
+          <!-- UNFINISHED MODAL -->
+          <div id="modalreading">
+            <div class="modalreading-content">
+              <span class="close">&times;</span>
+              <h1 class="modalreading-text">Keep Going!</h1><br>
+              <h2 class="modalreading-text">You haven't clicked on all the choices! Keep going!</h2><br>
+              <a class="modalreading-text" href="#"><button id="newlevel" class="next-button" type="button">Continue</button></a>
+              <a class="modalreading-text" href="index.html"><button id="home" class="next-button" type="button">Home</button></a>
+            </div>
+          </div>
+          </div>
+          <!-- FINISHED MODAL -->
           <div id="modalreading">
             <div class="modalreading-content">
               <span class="close">&times;</span>
@@ -57,11 +65,10 @@
               <h2 class="modalreading-text">To play the new level, click on the next level button, or go to the home page to go back.</h2><br>
               <a class="modalreading-text" href="#"><button id="newlevel" class="next-button" type="button">Next Level</button></a>
               <a class="modalreading-text" href="index.html"><button id="home" class="next-button" type="button">Home</button></a>
-
             </div>
           </div>
-
           </div>
+          <!-- END OF MAIN CONTENT -->
         </div>
       </main>
 
