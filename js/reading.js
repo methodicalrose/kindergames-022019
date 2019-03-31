@@ -7,8 +7,9 @@ const catt = document.getElementById("cattext");
 const doorp = document.getElementById("doorpic");
 const doort = document.getElementById("doortext");
 const btn = document.getElementById("buttonreading");
-const modalread = document.getElementById("modalreading");
-const closer = document.getElementsByClassName("close");
+const modalreadun = document.getElementById("modalreadingundone");
+const modalreaddone = document.getElementById("modalreadingdone");
+const closebtn = document.getElementsByClassName("close");
 
 // PAIR ONE
 
@@ -58,7 +59,7 @@ btn.onclick = function() {
   modalread.style.display = "block";
 }
 
-closer.onclick = function() {
+closebtn.onclick = function() {
   if (event.target == modalread) {
   modalread.style.display = "none";
   }
@@ -70,29 +71,17 @@ window.onclick = function(event) {
   }
 }
 
+// EVENT DELEGATION
+
 // document.addEventListener('click', function (event) {
 
 // 	// If the clicked element doesn't have the right selector, bail
 // 	if (!event.target.matches('.click-me')) return;
 
 // 	// Don't follow the link
-// 	btn.onlick = function () {
-//     modalread.replaceChild.style.display = "block";
-//   }
-
-//   closer.onclick = function() {
-//     modalread.style.display = "none";
-//   }
-  
-//   window.onclick = function(event) {
-//     if (event.target == modalread) {
-//       modalread.style.display = "none";
-//     }
-//   }
+// 	event.preventDefault();
 
 // 	// Log the clicked element in the console
 // 	console.log(event.target);
 
-// } else {
-//   modal.style.display = "none";
-// });
+// }, false);
