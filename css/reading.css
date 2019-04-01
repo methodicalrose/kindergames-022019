@@ -37,6 +37,7 @@ body {
   margin-top: 10%;
   border-radius: 10%;
   border: 10px solid green;
+  margin-left: 5%;
 }
 
 .readtext-card {
@@ -46,6 +47,7 @@ body {
   border-radius: 10%;
   border: 6px solid green;
   text-align: center;
+  margin-left: 5%;
 }
 
 .text {
