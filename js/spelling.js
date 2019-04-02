@@ -14,8 +14,8 @@ for (var i = 0; i < pickedWord.length; i++) {
 };
 
 // Connect to Submit button
-function submitGuess() {
-  submitGuess.preventDefault();
+function submitGuess(e) {
+  e.preventDefault();
   if (spellGuess.value === pickedWord.value) {
     pointCounter ++;
     document.getElementById("Score").innerText = `${pointCounter}/10`;
