@@ -56,18 +56,18 @@ function pairthree (el){
 // MODAL FOR NEW LEVEL
 
 btn.onclick = function() {
-  modalread.style.display = "block";
+  modalreaddone.style.display = "block";
 }
 
 closebtn.onclick = function() {
-  if (event.target == modalread) {
-  modalread.style.display = "none";
+  if (event.target == modalreaddone) {
+  modalreaddone.style.display = "none";
   }
 }
 
 window.onclick = function(event) {
-  if (event.target == modalread) {
-    modalread.style.display = "none";
+  if (event.target == modalreaddone) {
+    modalreaddone.style.display = "none";
   }
 }
 
