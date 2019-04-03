@@ -54,22 +54,26 @@ function pairthree (el){
 }
 
 // MODAL FOR NEW LEVEL
+//THIS IS THE ONE THAT WORKS
+// btn.onclick = function() {
+//   modalreaddone.style.display = "block";
+// }
 
-btn.onclick = function() {
-  modalreaddone.style.display = "block";
-}
+// closebtn.onclick = function(event) {
+//   if (event.target == closebtn) {
+//   modalreaddone.style.display = "none";
+//   }
+// }
 
-closebtn.onclick = function(event) {
-  if (event.target == closebtn) {
-  modalreaddone.style.display = "none";
-  }
-}
+// window.onclick = function(event) {
+//   if (event.target == modalreaddone) {
+//     modalreaddone.style.display = "none";
+//   }
+// }
 
-window.onclick = function(event) {
-  if (event.target == modalreaddone) {
-    modalreaddone.style.display = "none";
-  }
-}
+// THIS IS THE NEW ONE I'M TRYING OUT
+
+
 
 // EVENT DELEGATION
 
