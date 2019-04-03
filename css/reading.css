@@ -23,9 +23,11 @@ body {
   letter-spacing: 1px;
 }
 
-.fa-volume-up {
-  height: 100px;
-  width: 100px;
+.volume {
+  height: 35px;
+  width: 35px;
+  margin-left: 90%;
+  z-index: 1;
 }
 
 /* MAIN DIVS FOR PICTURES AND TEXT */
