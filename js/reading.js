@@ -59,8 +59,8 @@ btn.onclick = function() {
   modalreaddone.style.display = "block";
 }
 
-closebtn.onclick = function() {
-  if (event.target == modalreaddone) {
+closebtn.onclick = function(event) {
+  if (event.target == closebtn) {
   modalreaddone.style.display = "none";
   }
 }
