@@ -179,3 +179,26 @@ body {
   background-color: #3e8e41;
   transform: translateY(4px);
 }
+
+/* NEXT LEVEL */
+
+/* PICTURES */
+
+.handpic {
+  height: 68%;
+  width: 100%;
+  margin-top: 20%;
+}
+
+.tablereadpic {
+  height: 63%;
+  width: 91%;
+  margin-top: 16%;
+  margin-left: 5%;
+}
+
+.dogpic {
+  height: 75%;
+  width: 107%;
+  margin-top: 13%;
+}
