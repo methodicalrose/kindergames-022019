@@ -1,3 +1,4 @@
+/* HEADER AND BODY */
 header {
   height: 50px;
   width: 100%;
@@ -7,23 +8,35 @@ header {
 }
 
 body {
-  background-color: lightgreen;
+  background-color: #FFF07C;
   padding: 0;
   margin: 0;
 }
 
 #Welcome {
-  font-size: 24pt;
-  color: white;
+  color: #ffffff;
+
   align: left;
   margin-top: 5px;
   margin-left: 10px;
 }
 
+.game-title {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #a18da5;
+  margin-top: 5%;
+  margin-left: 35%;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+/* MAIN BODY */
+
 .game-card {
   background-color: white;
   height: 400px;
-  margin-top: 10%;
+  margin-left: 5%;
+  margin-top: 3%;
   border-radius: 10%;
   border: 10px solid green;
 }
@@ -52,6 +65,27 @@ body {
   z-index: 100;
 }
 
+.onetwothree {
+  height: 43%;
+  width: 98%;
+  margin-top: 38%;
+}
+
+.books {
+  height: 68%;
+  width: 86%;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.abc {
+  height: 57%;
+  width: 99%;
+  margin-top: 25%;
+}
+
+/* FOOTER */
+
 .game-card-footer {
   height: 35px;
   width: 100%;
@@ -64,6 +98,7 @@ body {
   right: 0;
   position: absolute;
   margin: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 .game-card-footer:hover {
