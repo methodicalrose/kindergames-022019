@@ -1,33 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <link rel="stylesheet" href="css/bootstrap.min.css">
- <link rel="stylesheet" href="css/styles.css">
- <title>Kinder Games</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <title>Kinder Games</title>
 </head>
 <body>
- <!-- test -->
- <header>
-   <div id="Welcome">Welcome, guest!</div>
- </header>
- <main>
-   <!-- MAIN PAGE -->
-   <div class="container">
-     <div class="row">
-       <!-- SEE & SPELL -->
-       <div id="Card_1" class="game-card col-md-3"><a href="spelling.html"><div class="game-card-footer">See & Spell</div></a></div>
-       <!-- PICTURE MATCH -->
-     <div id="Card_2" class="game-card col-md-4 col-md-offset-1"><a href="reading.html"><div class="game-card-footer">Picture Match</div></a></div>
-       <!-- COUNTING FUN -->
-       <div id="Card_3" class="game-card col-md-3 col-md-offset-1"><a href="math.html"><div class="game-card-footer">Counting Fun</div></a></div>
-     </div>
-   </div>
- </main>
- <footer></footer>
 
- <script src="./js/scripts.js"></script>
+  <!-- sidebar start -->
+<div class="wrapper">
+  <div id="sidebar">
+      <span id="closeSidebar" onclick="sidebarToggleClose()" class="close-sidebar"><h3>x</h3></span>
+    <div class="sidebar-header">
+      <h3 id="navtitle" class="nav-title">Kinder<br/>Games</h3>
+    </div>
+    <ul>
+      <li class="active">
+        <a href="#">Home</a>
+      </li>
+      <li class="game1"><a href="#">game1</a></li>
+      <li class="game2"><a href="#">game2</a></li>
+      <li class="game2"><a href="#">game3</a></li>
+    </ul>
+  </div>
+</div>
+<!-- sidebar end -->
+<div id="content" class="content-body"></div>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <button id="sidebarCollapse" class="btn nav-btn" onclick="sidebarToggleOpen()">
+        <i class="fas fa-align-left" onclick="sidebarToggleOpen()"></i>
+        <span onclick="sidebarToggleOpen()">nav</span>
+      </button>
+    </div>
+  </nav>
+ <!-- MAIN PAGE start -->
+  <div class="container">
+    <div id="Welcome">Welcome, guest!</div>
+    <div class="row">
+         <!-- SEE & SPELL -->
+      <div id="Card_1" class="game-card col-md-3"><div class="game-card-footer">See & Spell</div></div>
+        <!-- PICTURE MATCH -->
+      <div id="Card_2" class="game-card col-md-4 col-md-offset-1"><div class="game-card-footer">Picture Match</div></div>
+          <!-- COUNTING FUN -->
+      <div id="Card_3" class="game-card col-md-3 col-md-offset-1"><div class="game-card-footer">Counting Fun</div></div>
+    </div>
+  </div>
+
+        <!-- MAIN PAGE end -->
+
+
+
+
+
+
+  <footer></footer>
+
+  <script src="./js/scripts.js"></script>
 </body>
 </html>
