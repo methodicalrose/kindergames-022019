@@ -1,0 +1,181 @@
+/* HEADER AND BACKGROUND */
+header {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+  background-color: green;
+}
+
+body {
+  background-color: #FFF07C;
+}
+
+/* HEADER */
+
+.game-title {
+  font-size: 30px;
+  color: white;
+  margin-top: 5px;
+  margin-left: 45%;
+  font-family: "Comic Sans MS", sans-serif;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.volume {
+  height: 35px;
+  width: 35px;
+  margin-left: 90%;
+  z-index: 1;
+}
+
+/* MAIN DIVS FOR PICTURES AND TEXT */
+
+.readpic-card{
+  background-color: white;
+  height: 300px;
+  margin-top: 10%;
+  margin-left: 5%;
+  border-radius: 10%;
+  border: 10px solid green;
+  margin-left: 5%;
+}
+
+.readtext-card {
+  background-color: white;
+  height: 80px;
+  margin-top: 10%;
+  margin-left: 5%;
+  border-radius: 10%;
+  border: 6px solid green;
+  text-align: center;
+  margin-left: 5%;
+}
+
+.text {
+  font-weight: bold;
+}
+
+/* PICTURES */
+
+.carpic {
+  height: 56%;
+  width: 100%;
+  margin-top: 30%;
+}
+
+.catpic {
+  margin-left: 20%;
+  margin-top: 5%;
+  height: 89%;
+  width: 50%;
+}
+
+.doorpic {
+  height: 96%;
+  width: 60%;
+  margin-top: 4%;
+  margin-left: 20%;
+}
+
+/* NEW CLASSES WHEN DIVS ARE CLICKED */
+
+.pairone {
+  border: 10px solid red; /* red */
+}
+
+.pairtwo {
+  border: 10px solid #8A7090; /* purple */
+}
+
+.pairthree {
+  border: 10px solid #63D2FF; /* blue */
+}
+
+/* COMPLETE BUTTON */
+
+#buttonreading {
+  margin-top: 3%;
+  margin-left: 45%;
+  padding: 15px 25px;
+  font-size: 24px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: green;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#buttonreading:hover {background-color: #3e8e41}
+
+#buttonreading:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* MODAL */
+
+#modalreadingdone {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modalreading-content {
+  background-color: #3e8e41;
+  color: #fff;
+  font-weight: 100;
+  border: 1px solid #000;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.close {
+  color: #000;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+/* NEXT LEVEL AND HOME BUTTON IN MODAL */
+
+.next-button {
+  margin-top: 2%;
+  font-size: 24px;
+  border-radius: 15px;
+  box-shadow: 0 9px #666;
+  margin-right: 3%;
+}
+
+.modalreading-text {
+  text-decoration: none;
+  color: #000;
+}
+
+.next-button:hover {background-color: #3e8e41}
+
+.next-button:active {
+  background-color: #3e8e41;
+  transform: translateY(4px);
+}

@@ -11,12 +11,12 @@
 </head>
 <body>
   <header>
-    <div class="game-title">See & Spell</div>
+    <div class="spellgame-title">See & Spell</div>
   </header>
   <main>
     <div class="container">
       <div class="row">
-        <div id="Score">0/10</div>
+        <div id="Score">Score: 0/10</div>
       </div>
       <div class="row">
         <div id="SpellPic" class="col-md-4 col-md-offset-4"></div>
@@ -27,10 +27,13 @@
       <div class="row">
         <form id="SpellBox" name="SpellBox">
           <input type="text" id="SpellGuess" name="SpellGuess">
-          <button type="submit" class="btn btn-success" onclick="submitGuess(event)">
+          <button type="submit" id="GuessButton" class="btn btn-success" onclick="submitGuess(event)">
             <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
           </button>
         </form>
+      </div>
+      <div class="row">
+        <a href="index.html"><button id="HomeButton" class="btn btn-success col-md-4 col-md-offset-4">Go Home</button></a>
       </div>
     </div>
   </main>
