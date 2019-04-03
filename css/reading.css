@@ -13,20 +13,21 @@ body {
 
 /* HEADER */
 
-#Welcome {
-  font-size: 30px;
-  color: white;
-  align: left;
-  margin-top: 5px;
-  margin-left: 10px;
-}
-
 .game-title {
   font-size: 30px;
   color: white;
-  align: left;
   margin-top: 5px;
-  margin-left: 10px;
+  margin-left: 45%;
+  font-family: "Comic Sans MS", sans-serif;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.volume {
+  height: 35px;
+  width: 35px;
+  margin-left: 90%;
+  z-index: 1;
 }
 
 /* MAIN DIVS FOR PICTURES AND TEXT */
@@ -35,14 +36,16 @@ body {
   background-color: white;
   height: 300px;
   margin-top: 10%;
+  margin-left: 5%;
   border-radius: 10%;
   border: 10px solid green;
 }
 
 .readtext-card {
   background-color: white;
-  height: 100px;
+  height: 80px;
   margin-top: 10%;
+  margin-left: 5%;
   border-radius: 10%;
   border: 6px solid green;
   text-align: center;
@@ -54,9 +57,24 @@ body {
 
 /* PICTURES */
 
-.carpic, .catpic, .doorpic {
-  height: 100%;
+.carpic {
+  height: 56%;
   width: 100%;
+  margin-top: 30%;
+}
+
+.catpic {
+  margin-left: 20%;
+  margin-top: 5%;
+  height: 89%;
+  width: 50%;
+}
+
+.doorpic {
+  height: 96%;
+  width: 60%;
+  margin-top: 4%;
+  margin-left: 20%;
 }
 
 /* NEW CLASSES WHEN DIVS ARE CLICKED */
@@ -80,7 +98,8 @@ body {
   margin-left: 45%;
   padding: 15px 25px;
   font-size: 24px;
-  font-weight: 100;
+  font-weight: bolder;
+  letter-spacing: 2px;
   text-align: center;
   text-decoration: none;
   outline: none;
@@ -99,25 +118,9 @@ body {
   transform: translateY(4px);
 }
 
-/* FOOTER */
-
-.game-card-footer {
-  height: 35px;
-  width: 100%;
-  background-color: green;
-  color: white;
-  font-size: 30px;
-  text-align: center;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-  margin: 0;
-}
-
 /* MODAL */
 
-#modalreading {
+#modalreadingdone {
   display: none;
   position: fixed;
   z-index: 1;

@@ -7,8 +7,9 @@ const catt = document.getElementById("cattext");
 const doorp = document.getElementById("doorpic");
 const doort = document.getElementById("doortext");
 const btn = document.getElementById("buttonreading");
-const modalread = document.getElementById("modalreading");
-const closer = document.getElementsByClassName("close");
+const modalreadun = document.getElementById("modalreadingundone");
+const modalreaddone = document.getElementById("modalreadingdone");
+const closebtn = document.getElementsByClassName("close");
 
 // PAIR ONE
 
@@ -54,43 +55,33 @@ function pairthree (el){
 
 // MODAL FOR NEW LEVEL
 
-// btn.onclick = function() {
-//   modalread.style.display = "block";
-// }
+btn.onclick = function() {
+  modalreaddone.style.display = "block";
+}
 
-// closer.onclick = function() {
-//   modalread.style.display = "none";
-// }
-
-// window.onclick = function(event) {
-//   if (event.target == modalread) {
-//     modalread.style.display = "none";
-//   }
-// }
-
-document.addEventListener('click', function (event) {
-
-	// If the clicked element doesn't have the right selector, bail
-	if (!event.target.matches('.click-me')) return;
-
-	// Don't follow the link
-	btn.onlick = function () {
-    modalread.replaceChild.style.display = "block";
+closebtn.onclick = function(event) {
+  if (event.target == closebtn) {
+  modalreaddone.style.display = "none";
   }
+}
 
-  closer.onclick = function() {
-    modalread.style.display = "none";
+window.onclick = function(event) {
+  if (event.target == modalreaddone) {
+    modalreaddone.style.display = "none";
   }
-  
-  window.onclick = function(event) {
-    if (event.target == modalread) {
-      modalread.style.display = "none";
-    }
-  }
+}
 
-	// Log the clicked element in the console
-	console.log(event.target);
+// EVENT DELEGATION
 
-} else {
-  modal.style.display = "none";
-});
+// document.addEventListener('click', function (event) {
+
+// 	// If the clicked element doesn't have the right selector, bail
+// 	if (!event.target.matches('.click-me')) return;
+
+// 	// Don't follow the link
+// 	event.preventDefault();
+
+// 	// Log the clicked element in the console
+// 	console.log(event.target);
+
+// }, false);
