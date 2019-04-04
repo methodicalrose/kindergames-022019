@@ -1,31 +1,47 @@
 var spellingWords = ["cat", "dog", "ant", "fish", "mom", "dad", "bed", "bat", "can", "pot", "red", "blue", "pink", "ball", "run", "cry", "hug", "jump", "yell", "cup"];
-var pickedWord = spellingWords[Math.floor(Math.random() * spellingWords.length)];
-var spellGuess = document.getElementById("SpellGuess").value;
+var spaceDiv = document.getElementById("SpaceDiv");
+var spellPic = document.getElementById("SpellPic");
+var score = document.getElementById("Score");
+var spellGuess = document.getElementById("SpellGuess");
+var guessButton = document.getElementById("GuessButton");
+var goHome = document.getElementById("HomeButton");
 var pointCounter = 0;
 var qNumber = 0;
-var blankSpaces = [];
-const url = `url(images/${pickedWord}.jpg)`;
-
-// Generate word image and blank spaces
-for (var i = 0; i < pickedWord.length; i++) {
- blankSpaces[i] = "_";
- document.getElementById("SpaceDiv").innerText = blankSpaces.join(" ");
- document.getElementById("SpellPic").style.backgroundImage = url;
-};
-
+var pickedWord;
+function getWord() {
+  // Generate random index, remove that word from the word array
+  const index = Math.floor(Math.random() * spellingWords.length);
+  return spellingWords.splice(index, 1)[0];
+}
+function prepGame() {
+  pickedWord = getWord();
+  const url = `url(images/${pickedWord}.jpg)`;
+  const blankSpaces = [];
+  // Generate word image and blank spaces
+  for (var i = 0; i < pickedWord.length; i++) {
+    blankSpaces[i] = "_";
+    spaceDiv.innerText = blankSpaces.join(" ");
+    spellPic.style.backgroundImage = url;
+  };
+}
 // Connect to Submit button
 function submitGuess(e) {
   e.preventDefault();
-  if (spellGuess.value === pickedWord.value) {
-    pointCounter ++;
-    document.getElementById("Score").innerText = `${pointCounter}/10`;
-    console.log(pointCounter);
+  if (spellGuess.value.toLowerCase() === pickedWord) {
+    pointCounter++;
+    score.innerText = `Score: ${pointCounter}/10`;
   };
-  qNumber ++
+  spellGuess.value = '';
+  qNumber++;
   if (qNumber < 10) {
-    pickedWord = spellingWords[Math.floor(Math.random() * spellingWords.length)];
+    prepGame();
   } else {
-    //display final score, button back to home page
+    score.style.fontSize = "40pt";
+    spellPic.style.display = "none";
+    spaceDiv.style.display = "none";
+    spellGuess.style.display = "none";
+    guessButton.style.display = "none";
+    goHome.style.display = "block";
   };
-  console.log(qNumber)
 };
+prepGame();
