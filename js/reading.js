@@ -25,7 +25,7 @@ function pairone (el){
   }
 }
 
-// PAIR TWO 
+// PAIR TWO
 
 catp.addEventListener("click", pairtwo);
 catt.addEventListener("click", pairtwo);
