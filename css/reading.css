@@ -119,10 +119,13 @@ body {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-
+a {
+  display: flex!important;
+  justify-content: center!important;
+}
 /* MODAL */
 
-#modalreadingdone {
+#modalreadingdone, #modalreadingundone {
   display: none;
   position: fixed;
   z-index: 1;
@@ -178,4 +181,27 @@ body {
 .next-button:active {
   background-color: #3e8e41;
   transform: translateY(4px);
+}
+
+/* NEXT LEVEL */
+
+/* PICTURES */
+
+.handpic {
+  height: 68%;
+  width: 100%;
+  margin-top: 20%;
+}
+
+.tablereadpic {
+  height: 63%;
+  width: 91%;
+  margin-top: 16%;
+  margin-left: 5%;
+}
+
+.dogpic {
+  height: 100%;
+  width: 102%;
+  border-radius: 8px;
 }

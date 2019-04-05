@@ -8,11 +8,13 @@ var goHome = document.getElementById("HomeButton");
 var pointCounter = 0;
 var qNumber = 0;
 var pickedWord;
+
 function getWord() {
   // Generate random index, remove that word from the word array
   const index = Math.floor(Math.random() * spellingWords.length);
   return spellingWords.splice(index, 1)[0];
-}
+};
+
 function prepGame() {
   pickedWord = getWord();
   const url = `url(images/${pickedWord}.jpg)`;
@@ -23,7 +25,8 @@ function prepGame() {
     spaceDiv.innerText = blankSpaces.join(" ");
     spellPic.style.backgroundImage = url;
   };
-}
+};
+
 // Connect to Submit button
 function submitGuess(e) {
   e.preventDefault();
@@ -44,4 +47,5 @@ function submitGuess(e) {
     goHome.style.display = "block";
   };
 };
+
 prepGame();

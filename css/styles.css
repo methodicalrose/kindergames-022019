@@ -18,6 +18,9 @@ body {
 }
 a {
   width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #Welcome {
@@ -98,7 +101,6 @@ a {
   text-decoration: underline;
   color: white;
   font-size: 26pt;
-}
 
 @media screen and (max-width: 567px) {
   #Card_1{
@@ -111,4 +113,3 @@ a {
     margin-right:15px;
   }
 }
-
