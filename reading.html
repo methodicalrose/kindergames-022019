@@ -7,13 +7,15 @@
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/reading.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <title>Picture Match</title>
 </head>
 <body>
     <header>
         <div class="col-md-5 game-title">Picture Match
-            <audio id="direction" src="audio/exampleaudio.m4a"></audio>
-            <img class="volume img-responsive" src="img/volumeup.png" alt="Picture of a volume sign" onclick="document.getElementById('direction').play()"/>
+            <audio id="direction" src="audio/instructions.m4a"></audio>
+            <i class="fas fa-volume-up icon" onlick="document.getElementById('direction').play()"></i>
+            <!-- <img class="volume img-responsive" src="img/volumeup.png" alt="Picture of a volume sign" onclick="document.getElementById('direction').play()"/> -->
         </div>
       </header>
       <div class="container">
@@ -53,7 +55,7 @@
             <!-- BUTTON -->
           <button id="buttonreading" type="button">Done</button>
           <!-- UNFINISHED MODAL -->
-          <!-- <div id="modalreadingundone">
+          <div id="modalreadingundone">
             <div class="modalreading-content">
               <span class="close">&times;</span>
               <h1 class="modalreading-text">Keep Going!</h1><br>
@@ -61,7 +63,7 @@
               <a class="modalreading-text" href="#"><button id="continue" class="next-button" type="button">Continue</button></a>
               <a class="modalreading-text" href="index.html"><button id="home" class="next-button" type="button">Home</button></a>
             </div>
-          </div> -->
+          </div>
           <!-- FINISHED MODAL -->
           <div id="modalreadingdone">
             <div class="modalreading-content">

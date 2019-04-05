@@ -16,6 +16,7 @@ const closebtn = document.getElementsByClassName("close");
 carp.addEventListener("click", pairone);
 cart.addEventListener("click", pairone);
 
+
 function pairone (el){
   this.classList.toggle("pairone");
   if(el.className === "this"){
@@ -30,6 +31,7 @@ function pairone (el){
 catp.addEventListener("click", pairtwo);
 catt.addEventListener("click", pairtwo);
 
+
 function pairtwo (el){
   this.classList.toggle("pairtwo");
   if(el.className === "this"){
@@ -43,6 +45,7 @@ function pairtwo (el){
 
 doorp.addEventListener("click", pairthree);
 doort.addEventListener("click", pairthree);
+
 
 function pairthree (el){
   this.classList.toggle("pairthree");
@@ -71,17 +74,25 @@ window.onclick = function(event) {
   }
 }
 
+// btn.addEventListener ('click', finished);
+
+// function finished (event){
+//   if(!event.target.matches('click-me')){
+//     modalreadun.style.display = "block";
+//     } else(event.target.matches('click-me')) 
+//       modalreaddone.style.display = "block";
+//   } 
+  
+
 // EVENT DELEGATION
 
-// document.addEventListener('click', function (event) {
+// btn.addEventListener('click', function (event) {
 
 // 	// If the clicked element doesn't have the right selector, bail
 // 	if (!event.target.matches('.click-me')) return;
 
-// 	// Don't follow the link
-// 	event.preventDefault();
-
-// 	// Log the clicked element in the console
-// 	console.log(event.target);
+//   // Don't follow the link
+//   modalreadun.style.display = "block";
 
 // }, false);
+

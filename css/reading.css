@@ -122,7 +122,7 @@ body {
 
 /* MODAL */
 
-#modalreadingdone {
+#modalreadingdone, #modalreadingundone {
   display: none;
   position: fixed;
   z-index: 1;
@@ -198,7 +198,7 @@ body {
 }
 
 .dogpic {
-  height: 75%;
-  width: 107%;
-  margin-top: 13%;
+  height: 100%;
+  width: 102%;
+  border-radius: 8px;
 }
