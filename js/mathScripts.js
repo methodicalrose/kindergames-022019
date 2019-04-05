@@ -69,7 +69,8 @@ function checkAnswers(){
        }
     }
 function displayScore(){
-    confirm("you scored " + score+ " out of 10");
+    if(window.confirm("you scored " + score+ " out of 10"))
+    window.open("index.html");
 
 }
 function init(){
@@ -91,7 +92,6 @@ function shuffle(array){
     } return array;
 
 }
-
 
 init();
 
