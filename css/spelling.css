@@ -1,4 +1,4 @@
-.game-title {
+.spellgame-title {
   color: white;
   font-size: 30pt;
   text-align: center;
@@ -34,4 +34,10 @@
   font-weight: bold;
   font-size: 20pt;
   text-align: center;
+}
+
+#HomeButton {
+  font-size: 20pt;
+  margin-top: 20px;
+  display: none;
 }
