@@ -11,6 +11,11 @@
   <title>Kinder Games</title>
 </head>
 <body>
+  <header>
+    <button class="btn"><a href="index.html">home</a></button>
+    <button class="btn"><a href="spelling.html">see and spell</a></button>
+    <button class="btn"><a href="reading.html">picture match</a></button>
+    </header>
   <div class="row">
   <div id="quiz" class="col-md-8">
     <div class="img-display">
@@ -26,12 +31,12 @@
         <button class="btn optionBtn"><h3 class="option">s2</h3></button>
         <button class="btn optionBtn"><h3 class="option">s3</h3></button>
         <button class="btn optionBtn"><h3 class="option">s4</h3></button>
-        <div id="questionNumber" class="text-center col-12 qustion-number">Question number display</div>
-        <i class="fas fa-volume-up icon"></i>
-        <button><a href="index.html"></a></button>
+        <strong><div id="questionNumber" class="text-center col-12 qustion-number">Question number display</div></strong>
+        <audio id="instructions" src="audio/math.mp3"></audio>
+        <i class="fas fa-volume-up icon" onclick="document.getElementById('instructions').play()"></i>
+
 
     </div>
-      <a href=""></a>
     </div>
   </div>
 
@@ -44,4 +49,5 @@
 
 </body>
 </html>
+
 
