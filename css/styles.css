@@ -1,67 +1,115 @@
+/* HEADER AND BODY */
 header {
   height: 50px;
   width: 100%;
   position: fixed;
   z-index: 10000;
-  background-color: green;
+  background-color: #1B591B;
 }
 
 body {
-  background-color: lightgreen;
+  background-color: #FFF07C;
   padding: 0;
   margin: 0;
 }
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+a {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 #Welcome {
-  font-size: 30px;
-  color: white;
-  align: left;
-  margin-top: 5px;
-  margin-left: 10px;
+  color: #ffffff;
+  text-align: left;
+  margin-top: 12px;
+  margin-left: 12px;
 }
+
+.game-title {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #A5115B;
+  margin: 80px 0 40px;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+/* MAIN BODY */
 
 .game-card {
   background-color: white;
   height: 400px;
-  margin-top: 10%;
+  margin-left: 5%;
+  margin-top: 3%;
   border-radius: 10%;
-  border: 10px solid green;
+  border: 10px solid #1B591B;
 }
 
 #Card_1 {
-  background-image: url("https://unsplash.com/photos/J9TV0hiN1y0");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   z-index: 100;
 }
 
 #Card_2 {
-  background-image: url("https://unsplash.com/photos/p_KJvKVsH14");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   z-index: 100;
 }
 
 #Card_3 {
-  background-image: url("https://unsplash.com/photos/cHhbULJbPwM");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   z-index: 100;
 }
+
+.onetwothree {
+  margin:10px;
+  height: 80%;
+  width: 90%;
+}
+
+.books {
+  margin:10px;
+  height: 90%;
+  width: 90%;
+}
+
+.abc {
+  margin:10px;
+  height: 90%;
+  width: 90%;
+}
+
+/* FOOTER */
 
 .game-card-footer {
   height: 35px;
   width: 100%;
-  background-color: green;
+  background-color: #1B591B;
+  border-radius: 0px 0px 10px 10px;
   color: white;
-  font-size: 30px;
+  font-size: 24pt;
   text-align: center;
   bottom: 0;
   left: 0;
   right: 0;
   position: absolute;
   margin: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.game-card-footer:hover {
+  text-decoration: underline;
+  color: white;
+  font-size: 26pt;
+
+@media screen and (max-width: 567px) {
+  #Card_1{
+    margin-right:15px;
+  }
+  #Card_2{
+    margin-right:15px;
+  }
+  #Card_3{
+    margin-right:15px;
+  }
 }

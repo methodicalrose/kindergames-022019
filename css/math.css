@@ -1,0 +1,149 @@
+
+body{
+  margin:0px;
+  color: #ffffff;
+}
+form {
+  margin-top:30vh;
+}
+header {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+  background-color: #1B591B;
+}
+.btn{
+  background-color: #1B591B;
+}
+a {
+  color: #ffffff;
+  text-decoration: none !important;
+  margin: 0px 10px
+}
+a:hover {
+  color: #32A532;
+}
+.container {
+height: 100vh;
+margin:0px;
+display: flex;
+justify-content: center;
+align-content: center;
+}
+#quiz{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:0px;
+  margin-top:60px;
+}
+img {
+  padding: 10px 10px;
+  max-height: 50vh!important;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0px;
+}
+.titleQuestion{
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.question{
+  background-color:#32A532;
+  color: white;
+  padding: 20px;
+  margin: 0px;
+  text-align: center;
+}
+.option-container{
+  text-align: center;
+  height: 100%;
+  margin-top: 50px;
+}
+.options {
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  background-color:#32A532;
+  justify-content: center;
+  align-items: center;
+}
+.optionBtn{
+  width:70%;
+  height:50px;
+  margin-top: 20px;
+  color:#1B591B;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 1px 5px #1B591B;
+  border: none;
+}
+.optionBtn:focus{
+  outline: none;
+}
+.optionBtn:hover{
+  color:#ffffff;
+  background-color:#32A532;
+  border: none;
+}
+.question-number{
+  color:#ffffff !important;
+}
+.icon {
+  margin-bottom:20px;
+  padding:10px;
+  color:#ffffff;
+  font-size: 2.5em;
+}
+.icon:hover {
+  color:#1B591B;
+
+}
+
+
+@media screen and (max-width: 768px) {
+  body{
+    background-color: #32A532;
+  }
+  img{
+    margin:2px;
+    background-size: cover;
+    background-color: #ffffff;
+    width:100%!important;
+  }
+  #quiz {
+    background-color: #ffffff;
+   height:50vh;
+   margin:15px 0px 10px;
+
+  }
+ .options {
+   background-color: #32A532;
+   margin: 0px;
+   height: 40vh;
+   padding: 5px;
+ }
+  .option-container{
+    margin:0px;
+    height:40vh;
+
+  }
+  .titleQuestion{
+    margin:0px auto 0px;
+  }
+  .btn{
+padding:0px;
+margin:3px
+  }
+  .text-center{
+color:#ffffff;
+    margin:0px;
+  }
+
+}
